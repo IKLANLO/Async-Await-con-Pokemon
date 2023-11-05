@@ -1,4 +1,5 @@
 const pokemonContainer = document.querySelector('#container')
+const pokemonBtn = document.querySelector('#pokemonButton')
 const pokemonUrl = 'https://pokeapi.co/api/v2/pokemon/'
 
 async function paintPokemon(name, image){
@@ -20,5 +21,4 @@ async function randomPokemon(){
 
 }
 
-randomPokemon()
-
+pokemonBtn.addEventListener('click', randomPokemon)
